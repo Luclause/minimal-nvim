@@ -10,9 +10,9 @@ vim.opt.relativenumber = true
 vim.opt.mouse = 'a'
 
 -- Sync clipboard between OS and Neovim.
-vim.schedule(function()
-  vim.opt.clipboard = 'xclip'
-end)
+-- vim.schedule(function()
+--   vim.opt.clipboard = 'xclip'
+-- end)
 
 -- Enable break indent
 vim.opt.breakindent = true
