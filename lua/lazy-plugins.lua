@@ -14,9 +14,9 @@ require('lazy').setup({
 
   require 'plugins/telescope',
 
-  -- require 'plugins/lspconfig',
+  require 'plugins/lspconfig',
 
-  -- require 'plugins/conform',
+  require 'plugins/conform',
 
   require 'plugins/cmp',
  
