@@ -4,7 +4,7 @@ require('lazy').setup({
   -- Detect tabstop and shiftwidth automatically
   'tpope/vim-sleuth',
 
-  -- require 'plugins/autopairs',
+  require 'plugins/autopairs',
 
   require 'plugins/neo-tree',
 
@@ -20,7 +20,9 @@ require('lazy').setup({
 
   --  require 'plugins/cmp',
  
-  require 'plugins/catppuccinn',
+  require 'plugins.catppuccinn',
+
+  require 'plugins.transparent-nvim',
 
   require 'plugins/todo-comments',
 

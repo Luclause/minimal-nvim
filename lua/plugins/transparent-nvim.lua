@@ -15,22 +15,4 @@ return {
     transparent.clear_prefix "lualine"
     transparent.clear_prefix "TabLine"
   end,
-  dependencies = {
-    {
-      "AstroNvim/astrocore",
-      opts = function(_, opts)
-        opts.mappings.n["<Leader>uT"] = { "<Cmd>TransparentToggle<CR>", desc = "Toggle transparency" }
-        if vim.tbl_get(opts, "autocmds", "heirline_colors") then
-          table.insert(opts.autocmds.heirline_colors, {
-            event = "User",
-            pattern = "TransparentClear",
-            desc = "Refresh heirline colors",
-            callback = function()
-              if package.loaded["heirline"] then require("astroui.status.heirline").refresh_colors() end
-            end,
-          })
-        end
-      end,
-    },
-  },
 }
