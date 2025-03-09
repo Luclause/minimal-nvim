@@ -1,34 +1,34 @@
 -- [[ Configure and install plugins ]]
-require('lazy').setup({
+require("lazy").setup({
 
   -- Detect tabstop and shiftwidth automatically
-  'tpope/vim-sleuth',
+  "tpope/vim-sleuth",
 
-  require 'plugins/autopairs',
+  require "plugins/autopairs",
 
-  require 'plugins/neo-tree',
+  require "plugins/neo-tree",
 
-  require 'plugins/gitsigns',
+  require "plugins/gitsigns",
 
-  require 'plugins/which-key',
+  require "plugins/which-key",
 
-  require 'plugins/telescope',
+  require "plugins/telescope",
 
-  require 'plugins/lspconfig',
+  require "plugins/lspconfig",
 
-  require 'plugins/conform',
+  require "plugins/conform",
 
-  require 'plugins/cmp',
- 
-  require 'plugins.catppuccinn',
+  require "plugins/cmp",
 
-  require 'plugins.transparent-nvim',
+  require "plugins.catppuccinn",
 
-  require 'plugins/todo-comments',
+  require "plugins.transparent-nvim",
+
+  require "plugins/todo-comments",
 
   -- require 'plugins/mini',
 
-  -- require 'plugins/treesitter',
+  require "plugins/treesitter",
 
   -- The following comments only work if you have downloaded the kickstart repo, not just copy pasted the
   -- init.lua. If you want these files, they are in the repository, so you can just download them and
@@ -58,19 +58,19 @@ require('lazy').setup({
     -- If you are using a Nerd Font: set icons to an empty table which will use the
     -- default lazy.nvim defined Nerd Font icons, otherwise define a unicode icons table
     icons = vim.g.have_nerd_font and {} or {
-      cmd = '⌘',
-      config = '🛠',
-      event = '📅',
-      ft = '📂',
-      init = '⚙',
-      keys = '🗝',
-      plugin = '🔌',
-      runtime = '💻',
-      require = '🌙',
-      source = '📄',
-      start = '🚀',
-      task = '📌',
-      lazy = '💤 ',
+      cmd = "⌘",
+      config = "🛠",
+      event = "📅",
+      ft = "📂",
+      init = "⚙",
+      keys = "🗝",
+      plugin = "🔌",
+      runtime = "💻",
+      require = "🌙",
+      source = "📄",
+      start = "🚀",
+      task = "📌",
+      lazy = "💤 ",
     },
   },
 })
