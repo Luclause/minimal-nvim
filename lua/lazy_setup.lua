@@ -1,11 +1,4 @@
 require("lazy").setup({
-  git = {
-    throttle = {
-      enabled = true,
-      rate = 1,
-      duration = 15 * 1000, -- in ms
-    },
-  },
   {
     "AstroNvim/AstroNvim",
     version = "^4", -- Remove version tracking to elect for nightly AstroNvim
