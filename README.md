@@ -25,12 +25,35 @@ minimal nvim configuration together with kickstart-modular again.
 
 ## 🛠️ Installation
 
-1. Backup your current nvim config `cp -r ~/.config/nvim ~/nvim_bkp`
-2. Clean out your current nvim config `rm -rf ~/.config/nvim && rm -rf ~/.local/share/nvim`
-3. Git clone this repository `git clone git@github.com:Luclause/minimal-nvim.git ~/.config/nvim`
-4. Start Neovim and be Lazy `nvim`
+1. Backup your current neovim config 
 
-> To restore your backup: `rm -rf ~/.config/nvim && cp -r ~/nvim_bkp ~/.config/nvim`
+```shell
+cp -r ~/.config/nvim ~/nvim_bkp`
+```
+
+2. Clean out your current neovim config 
+
+
+```shell
+rm -rf ~/.config/nvim && rm -rf ~/.local/share/nvim`
+```
+
+3. Git clone this repository
+```shell
+git clone git@github.com:Luclause/minimal-nvim.git ~/.config/nvim`
+```
+
+4. Start Neovim
+
+```shell
+nvim
+```
+
+#### To restore your backup: 
+
+```shell
+rm -rf ~/.config/nvim && cp -r ~/nvim_bkp ~/.config/nvim`
+```
 
 ## 📝 TODO
 
