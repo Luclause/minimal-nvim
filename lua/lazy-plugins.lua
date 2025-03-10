@@ -28,6 +28,8 @@ require("lazy").setup({
 
   require "plugins.treesitter",
 
+  require "plugins.lazygit",
+
   require "plugins.catppuccinn",
 
   require "plugins.misc",
