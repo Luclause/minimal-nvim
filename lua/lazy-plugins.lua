@@ -30,7 +30,7 @@ require("lazy").setup({
 
   require "plugins.catppuccinn",
 
-  require "plugins.user",
+  require "plugins.misc",
 
   -- require 'kickstart.plugins.debug',
   -- require 'kickstart.plugins.indent_line',
