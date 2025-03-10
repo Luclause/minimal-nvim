@@ -1,29 +1,40 @@
 # My minimal Neovim
 *based on [kickstart-modular.nvim](https://github.com/dam9000/kickstart-modular.nvim)* 
 
-I started on kickstart, mangled it; moved to kickstart-modular, kept it mangled;
-tried AstroNvim, liked it but still mangled with abstraction; moved back to kickstart-modular
-for something lighter on my Debian 12 server where weirdly enough, I set it up pretty clean
-for once...
+When I started my Neovim journey, I hacked things together with kickstart and created a mess.
+It didn't matter when I tried refactoring with kickstart-modular, I had no clue what I was doing.
 
-I guess the journey of hacking it together, then letting someone structure it for me, and
-now deciding how I'd like to manage it myself has really evolved my understanding.
+> *Maybe I should have learned Lua like a real man, things could have been different.*
 
-> *Honestly though, I should just learn Lua like a real man - but fuck it for now*
+When I tried AstroNvim, the structure, ease-of-use, and overall feel was what I needed - 
+until it wasn't. It was tedious mangling with abstraction any time I wanted to change something.
 
-You're free to clone this, rip it apart, and transform it for your own configuration :)
+> *I read more documentation for AstroNvim than for the plugin I wanted to install...*
 
-## Prequisites
+When I set up a Debian 12 VM, I didn't need all the juice AstroNvim provided so I put this
+minimal nvim configuration together with kickstart-modular again.
 
-- A Nerd Font ([JetBrains Mono Nerd Font](https://github.com/ryanoasis/nerd-fonts/releases/download/v3.3.0/JetBrainsMono.zip))
-- These software libraries:  `npm`
+> *And my god, this is clean - I did most of it myself and things finally make sense*
+
+## ⭕ Prequisites
+
+- [Neovim 0.8.0+](https://neovim.io) 
+- A Nerd Font (I use [JetBrains Mono Nerd Font](https://github.com/ryanoasis/nerd-fonts/releases/download/v3.3.0/JetBrainsMono.zip))
+- These software libraries: `npm`
 - These terminal/CLI tools: `lazygit` `ripgrep` `fzf`
 
 ## 🛠️ Installation
 
-#### Make a backup of your current nvim and shared folder
+1. Backup your current nvim config `cp -r ~/.config/nvim ~/nvim_bkp`
+2. Clean out your current nvim config `rm -rf ~/.config/nvim && rm -rf ~/.local/share/nvim`
+3. Git clone this repository `git clone git@github.com:Luclause/minimal-nvim.git ~/.config/nvim`
+4. Start Neovim and be Lazy `nvim`
 
-1. Clone this repository into a separate directory
-2. Copy contents of my `dotfiles/.config/nvim` into your `$HOME/.config/nvim` as desired
+> To restore your backup: `rm -rf ~/.config/nvim && cp -r ~/nvim_bkp ~/.config/nvim`
 
-> Alternatively, `git sparse-checkout` is an option if you'd like to stay updated with my config
+## 📝 TODO
+
+- [ ] Python LSP, DAP, Venv Selector
+- [ ] AI code companion (local & remote)
+- [ ] Codesnap
+
