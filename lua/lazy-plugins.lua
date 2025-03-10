@@ -8,6 +8,8 @@ require("lazy").setup({
 
   require "plugins.neo-tree",
 
+  require "plugins.bufferline",
+
   require "plugins.gitsigns",
 
   require "plugins.which-key",
