@@ -64,7 +64,7 @@ return {
         { "<leader>g", group = "Git", mode = { "n", "v" } },
         { "<leader>t", group = "Toggle" },
         { "<leader>c", group = "Code", mode = { "n", "x" } },
-        -- { '<leader>d', group = '[D]ocument' },
+        { "<leader>x", group = "Diagnostic" },
         -- { '<leader>r', group = '[R]ename' },
         -- { '<leader>w', group = '[W]orkspace' },
       },
