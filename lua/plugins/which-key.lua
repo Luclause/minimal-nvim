@@ -60,10 +60,10 @@ return {
       -- Document existing key chains
       spec = {
         { "<leader>f", group = "Find" },
-        { "<leader>l", group = "Language Tools", mode = { "n", "v" } },
+        { "<leader>l", group = "Language", mode = { "n", "v" } },
         { "<leader>g", group = "Git", mode = { "n", "v" } },
         { "<leader>t", group = "Toggle" },
-        -- { '<leader>c', group = '[C]ode', mode = { 'n', 'x' } },
+        { "<leader>c", group = "Code", mode = { "n", "x" } },
         -- { '<leader>d', group = '[D]ocument' },
         -- { '<leader>r', group = '[R]ename' },
         -- { '<leader>w', group = '[W]orkspace' },
