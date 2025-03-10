@@ -4,8 +4,14 @@
 -- Clear highlights on search when pressing <Esc> in normal mode
 vim.keymap.set("n", "<Esc>", "<cmd>nohlsearch<CR>")
 
--- Diagnostic keymaps
+-- Diagnostic
 vim.keymap.set("n", "<leader>xq", vim.diagnostic.setloclist, { desc = "Open Quickfix list" })
+
+-- Buffer
+vim.keymap.set("n", "<leader>bw", "<cmd>:w<CR>", { desc = "save buffer" })
+vim.keymap.set("n", "<leader>bW", "<cmd>:wa<CR>", { desc = "save all buffers" })
+vim.keymap.set("n", "<leader>bc", "<cmd>:bd<CR>", { desc = "close buffer" })
+vim.keymap.set("n", "<leader>bC", "<cmd>:bd!<CR>", { desc = "force close buffer" })
 
 -- Exit terminal mode in the builtin terminal with a shortcut that is a bit easier
 -- for people to discover. Otherwise, you normally need to press <C-\><C-n>, which
