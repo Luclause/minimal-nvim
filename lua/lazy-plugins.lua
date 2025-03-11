@@ -32,6 +32,8 @@ require("lazy").setup({
 
   require "plugins.lazygit",
 
+  require "plugins.toggleterm",
+
   require "plugins.catppuccinn",
 
   require "plugins.misc",
