@@ -28,19 +28,19 @@ minimal nvim configuration together with kickstart-modular again.
 1. Backup your current neovim config 
 
 ```shell
-cp -r ~/.config/nvim ~/nvim_bkp`
+cp -r ~/.config/nvim ~/nvim_bkp
 ```
 
 2. Clean out your current neovim config 
 
 
 ```shell
-rm -rf ~/.config/nvim && rm -rf ~/.local/share/nvim`
+rm -rf ~/.config/nvim && rm -rf ~/.local/share/nvim
 ```
 
 3. Git clone this repository
 ```shell
-git clone git@github.com:Luclause/minimal-nvim.git ~/.config/nvim`
+git clone git@github.com:Luclause/minimal-nvim.git ~/.config/nvim
 ```
 
 4. Start Neovim
